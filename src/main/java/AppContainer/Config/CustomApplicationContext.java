@@ -1,4 +1,4 @@
-package AppContainer;
+package AppContainer.Config;
 
 
 import org.springframework.context.annotation.Bean;
@@ -11,7 +11,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 @Configuration
 @EnableWebMvc
 @ComponentScan("AppContainer")
-public class ApplicationContext {
+public class CustomApplicationContext {
 
     @Bean
     public ViewResolver viewResolver() {

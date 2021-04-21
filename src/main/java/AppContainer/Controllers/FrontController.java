@@ -8,8 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class FrontController {
 
     @GetMapping("/")
-    public String getHomePage() {
+    public String showHomePage() {
         return "homePage";
     }
-
 }

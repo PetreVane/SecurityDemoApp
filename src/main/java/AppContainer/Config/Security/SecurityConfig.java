@@ -1,5 +1,6 @@
 package AppContainer.Config.Security;
 
+
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -7,7 +8,6 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.User.UserBuilder;
-
 
 @Configuration
 @EnableWebSecurity
@@ -19,14 +19,14 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
         UserBuilder users = User.withDefaultPasswordEncoder();
         auth.inMemoryAuthentication()
-                .withUser(users.username("petre").password("test123").roles("ADMIN"))
-                .withUser(users.username("ioana").password("casuta123").roles("USER"));
+                .withUser(users.username("petre").password("test123").roles("ADMIN"));
+
     }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 
-        http.authorizeRequests()
+        http.authorizeRequests().antMatchers("/resources/**", "/static/**","/webjars/**").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()
@@ -35,4 +35,5 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .permitAll();
 
     }
+
 }

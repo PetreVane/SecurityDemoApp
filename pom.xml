@@ -17,6 +17,8 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
+
+    <!-- Spring MVC and Security properties   -->
     <springsecurity.version>5.4.6</springsecurity.version>
     <springframework.version>5.2.14.RELEASE</springframework.version>
 
@@ -38,7 +40,7 @@
       <version>${springframework.version}</version>
     </dependency>
 
-    <!-- Fix for class not found: AbstractSecurityWebApplicationInitializer   -->
+    <!-- Spring-boot-starter-security Fix for class not found: AbstractSecurityWebApplicationInitializer   -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-security</artifactId>

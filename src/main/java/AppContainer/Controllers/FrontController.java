@@ -9,6 +9,8 @@ public class FrontController {
 
     @GetMapping("/")
     public String showHomePage() {
+
         return "homePage";
+//        return "list-customers";
     }
 }

@@ -34,6 +34,13 @@
                         Sorry, you entered an invalid username or password
                     </div>
                 </c:if>
+
+                <c:if test="${param.logout != null}">
+                    <div class="alert alert-warning col-xs-offset-1 col-xs-10">
+                        You have been logged out!
+                    </div>
+                </c:if>
+
                 <div class="form-group">
                     <button class="btn btn-primary btn-block text-dark" type="submit" style="background: var(--yellow);">Log In</button>
                 </div>

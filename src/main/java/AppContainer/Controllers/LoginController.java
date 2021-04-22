@@ -13,6 +13,5 @@ public class LoginController {
     public String showLoginPage() {
 
         return "loginPage";
-//        return "plain-login";
     }
 }

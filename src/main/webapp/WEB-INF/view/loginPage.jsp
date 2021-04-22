@@ -18,7 +18,7 @@
     <section class="login-dark" style="background: #ffffff;">
 
             <form:form method="post" action="${pageContext.request.contextPath}/authenticateUser" style="color: var(--orange);">
-                
+
                 <h2 class="sr-only">Login Form</h2>
                 <div class="illustration">
                     <i class="icon ion-ios-locked-outline" style="color: var(--orange);"></i>

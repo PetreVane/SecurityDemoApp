@@ -12,7 +12,7 @@ public class LoginController {
     @GetMapping("/showLoginPage")
     public String showLoginPage() {
 
-//        return "loginPage";
-        return "plain-login";
+        return "loginPage";
+//        return "plain-login";
     }
 }

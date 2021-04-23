@@ -18,6 +18,19 @@
 </head>
 
 <body>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col"></div>
+            <form:form method="post" action="${pageContext.request.contextPath}/logout">
+                <div class="col text-center">
+                <button class="btn btn-warning text-left" type="submit" value="Logout" style="text-align: center;margin-top: 25px;border-radius: 10px;border-color: rgba(33,37,41,0.9);width: 80px;">Logout</button>
+            </div>
+            </form:form>
+        </div>
+    </div>
+</section>
 <section class="highlight-clean">
     <div class="container">
         <div class="intro">

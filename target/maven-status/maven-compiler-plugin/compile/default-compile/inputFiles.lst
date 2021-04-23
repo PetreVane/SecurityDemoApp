@@ -1,5 +1,11 @@
-/Volumes/SecondaryDrive/Spring/webApps/SecurityDemoApp/src/main/java/AppContainer/Config/DispatcherServletInitializer.java
-/Volumes/SecondaryDrive/Spring/webApps/SecurityDemoApp/src/main/java/AppContainer/Config/WebSecurityAppInitializer.java
-/Volumes/SecondaryDrive/Spring/webApps/SecurityDemoApp/src/main/java/AppContainer/Config/CustomApplicationContext.java
+/Volumes/SecondaryDrive/Spring/webApps/SecurityDemoApp/src/main/java/AppContainer/DAO/CustomerDAO.java
+/Volumes/SecondaryDrive/Spring/webApps/SecurityDemoApp/src/main/java/AppContainer/Config/Security/SecurityConfig.java
+/Volumes/SecondaryDrive/Spring/webApps/SecurityDemoApp/src/main/java/AppContainer/Models/Customer.java
+/Volumes/SecondaryDrive/Spring/webApps/SecurityDemoApp/src/main/java/AppContainer/DAO/CustomerDaoImpl.java
+/Volumes/SecondaryDrive/Spring/webApps/SecurityDemoApp/src/main/java/AppContainer/Config/AppConfig/CustomApplicationContext.java
+/Volumes/SecondaryDrive/Spring/webApps/SecurityDemoApp/src/main/java/AppContainer/Controllers/LoginController.java
+/Volumes/SecondaryDrive/Spring/webApps/SecurityDemoApp/src/main/java/AppContainer/Config/AppConfig/DispatcherServletInitializer.java
 /Volumes/SecondaryDrive/Spring/webApps/SecurityDemoApp/src/main/java/AppContainer/Controllers/FrontController.java
-/Volumes/SecondaryDrive/Spring/webApps/SecurityDemoApp/src/main/java/AppContainer/Config/SecurityConfig.java
+/Volumes/SecondaryDrive/Spring/webApps/SecurityDemoApp/src/main/java/AppContainer/Config/Security/WebSecurityAppInitializer.java
+/Volumes/SecondaryDrive/Spring/webApps/SecurityDemoApp/src/main/java/AppContainer/Services/CustomerServiceImpl.java
+/Volumes/SecondaryDrive/Spring/webApps/SecurityDemoApp/src/main/java/AppContainer/Services/CustomerService.java

@@ -117,6 +117,26 @@
       <version>5.1.6.RELEASE</version>
     </dependency>
 
+    <dependency>
+      <groupId>org.glassfish.web</groupId>
+      <artifactId>jakarta.servlet.jsp.jstl</artifactId>
+      <version>1.2.6</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>2.12.1</version>
+    </dependency>
+
+    <!--   Tomcat JDBC Connection Pooling fits better for production purposes than the DriverManagerDataSource provided by Spring  -->
+    <dependency>
+      <groupId>org.apache.tomcat</groupId>
+      <artifactId>tomcat-dbcp</artifactId>
+      <version>9.0.1</version>
+    </dependency>
+
+
   </dependencies>
 
   <build>

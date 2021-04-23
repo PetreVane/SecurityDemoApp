@@ -1,4 +1,4 @@
-<%--suppress ALL --%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
 <!DOCTYPE html>
@@ -8,12 +8,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Customer-Details</title>
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/detailsForm-assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}resources/detailsForm-assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/detailsForm-assets/css/Highlight-Clean.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/detailsForm-assets/css/Responsive-Form-1.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/detailsForm-assets/css/Responsive-Form.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/detailsForm-assets/css/styles.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}resources/detailsForm-assets/css/Highlight-Clean.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}resources/detailsForm-assets/css/Responsive-Form-1.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}resources/detailsForm-assets/css/Responsive-Form.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}resources/detailsForm-assets/css/styles.css">
 </head>
 
 <body>
@@ -27,9 +27,9 @@
     </section>
     <div class="container">
         <div>
-            <form:form action="saveCustomer" modelAttribute="customer" method="POST">
+            <form:form action="${pageContext.request.contextPath}saveCustomer" modelAttribute="customer" method="post">
                 <form:hidden path="id" />
-            <form>
+
                     <div class="form-group shadow-none">
                     <div class="border-info shadow-sm" id="formdiv" style="transform: translate(0px);text-align: left;filter: blur(0px);">
 
@@ -58,8 +58,8 @@
                         </div>
 
                         <div class="form-row" style="margin-right:0;margin-left:0;padding-top:24px;">
-                            <div class="col text-center"><button class="btn btn-success btn-lg" type="submit">Save</button></div>
-<%--                                <td><input type="submit" value="Save" class="save" /></td>--%>
+                            <div class="col text-center">
+                                <button class="btn btn-success btn-lg" type="submit"> Save </button></div>
                         </div>
 
                         <div class="form-row">
@@ -69,17 +69,17 @@
                         </div>
                         <div class="form-row">
                             <div class="col" style="text-align: center;">
-                                <a href="${pageContext.request.contextPath}/customer/list" style="text-align: left;">Take me back to 'Customers List'</a>
+                                <a href="${pageContext.request.contextPath}list" style="text-align: left;">Take me back to 'Customers List'</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                </form>
+
             </form:form>
         </div>
     </div>
-    <script src="${pageContext.request.contextPath}/resources/detailsForm-assets/js/jquery.min.js"></script>
-    <script src="${pageContext.request.contextPath}/resources/detailsForm-assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="${pageContext.request.contextPath}resources/detailsForm-assets/js/jquery.min.js"></script>
+    <script src="${pageContext.request.contextPath}resources/detailsForm-assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>

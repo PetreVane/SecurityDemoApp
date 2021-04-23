@@ -8,13 +8,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Customer-List</title>
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/customerList/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/customerList/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/customerList/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/customerList/fonts/fontawesome5-overrides.min.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/customerList/css/Highlight-Clean.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/customerList/css/Lista-Productos-Canito.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/customerList/css/styles.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}resources/customerList/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}resources/customerList/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}resources/customerList/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}resources/customerList/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}resources/customerList/css/Highlight-Clean.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}resources/customerList/css/Lista-Productos-Canito.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}resources/customerList/css/styles.css">
 </head>
 
 <body>
@@ -47,7 +47,8 @@
 
             <div class="col-md-4 d-flex justify-content-center align-items-center">
                 <button
-                        class="btn btn-primary d-flex align-items-center align-self-center" type="button" value="Add Customer" onclick="window.location.href='showFormForAdd';return false;" style="height: 38px;background: var(--green);">Add Customer
+                        class="btn btn-primary d-flex align-items-center align-self-center" type="button" value="Add Customer"
+                        onclick="window.location.href='${pageContext.request.contextPath}/showFormForAdd';return false;" style="height: 38px;background: var(--green);">Add Customer
                 </button>
             </div>
         </div>
@@ -69,12 +70,12 @@
                     <c:forEach var="tempCustomer" items="${customers}">
 
                         <!-- construct an "update" link with customer id -->
-                        <c:url var="updateLink" value="/customer/showFormForUpdate">
+                        <c:url var="updateLink" value="${pageContext.request.contextPath}showFormForUpdate">
                             <c:param name="customerId" value="${tempCustomer.id}" />
                         </c:url>
 
                         <!-- construct the "delete" link with customer id -->
-                        <c:url var="deleteLink" value="/customer/delete">
+                        <c:url var="deleteLink" value="${pageContext.request.contextPath}delete">
                             <c:param name="customerId" value="${tempCustomer.id}" />
                         </c:url>
 
@@ -103,9 +104,9 @@
         </div>
     </div>
 </div>
-<script src="${pageContext.request.contextPath}/resources/customerList/js/jquery.min.js"></script>
-<script src="${pageContext.request.contextPath}/resources/customerList/bootstrap/js/bootstrap.min.js"></script>
-<script src="${pageContext.request.contextPath}/resources/customerList/js/Table-with-search.js"></script>
+<script src="${pageContext.request.contextPath}resources/customerList/js/jquery.min.js"></script>
+<script src="${pageContext.request.contextPath}resources/customerList/bootstrap/js/bootstrap.min.js"></script>
+<script src="${pageContext.request.contextPath}resources/customerList/js/Table-with-search.js"></script>
 </body>
 
 </html>

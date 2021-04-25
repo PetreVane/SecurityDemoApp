@@ -21,7 +21,7 @@ import java.util.Properties;
 @Configuration
 @EnableWebMvc
 @EnableTransactionManagement
-@ComponentScan("AppContainer")
+@ComponentScan("com.appContainer")
 public class CustomApplicationContext implements WebMvcConfigurer {
 
     @Bean

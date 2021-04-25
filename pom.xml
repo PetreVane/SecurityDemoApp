@@ -22,6 +22,11 @@
     <springsecurity.version>5.4.6</springsecurity.version>
     <springframework.version>5.2.14.RELEASE</springframework.version>
 
+    <!--  Sonar Properties   -->
+    <sonar.projectKey>PetreVane_SecurityDemoApp</sonar.projectKey>
+    <sonar.organization>petrevane</sonar.organization>
+    <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+
   </properties>
 
   <dependencies>

@@ -8,10 +8,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>LoginPage</title>
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/loginPage/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/loginPage/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/loginPage/css/Login-Form-Dark.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/loginPage/css/styles.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}resources/loginPage/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}resources/loginPage/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}resources/loginPage/css/Login-Form-Dark.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}resources/loginPage/css/styles.css">
 </head>
 
 <body>
@@ -34,6 +34,13 @@
                         Sorry, you entered an invalid username or password
                     </div>
                 </c:if>
+
+                <c:if test="${param.logout != null}">
+                    <div class="alert alert-warning col-xs-offset-1 col-xs-10">
+                        You have been logged out!
+                    </div>
+                </c:if>
+
                 <div class="form-group">
                     <button class="btn btn-primary btn-block text-dark" type="submit" style="background: var(--yellow);">Log In</button>
                 </div>
@@ -42,8 +49,8 @@
 
 
     </section>
-    <script src="${pageContext.request.contextPath}/resources/loginPage/js/jquery.min.js"></script>
-    <script src="${pageContext.request.contextPath}/resources/loginPage/bootstrap/js/bootstrap.min.js"></script>
+    <script src="${pageContext.request.contextPath}resources/loginPage/js/jquery.min.js"></script>
+    <script src="${pageContext.request.contextPath}resources/loginPage/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>

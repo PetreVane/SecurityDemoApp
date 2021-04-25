@@ -22,6 +22,11 @@
     <springsecurity.version>5.4.6</springsecurity.version>
     <springframework.version>5.2.14.RELEASE</springframework.version>
 
+    <!--  Sonar Properties   -->
+    <sonar.projectKey>PetreVane_SecurityDemoApp</sonar.projectKey>
+    <sonar.organization>petrevane</sonar.organization>
+    <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+
   </properties>
 
   <dependencies>
@@ -95,6 +100,47 @@
       <artifactId>jackson-databind</artifactId>
       <version>2.12.1</version>
     </dependency>
+
+    <!-- Hibernate Core -->
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-core</artifactId>
+      <version>5.4.27.Final</version>
+    </dependency>
+
+    <!-- MySQL -->
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>8.0.23</version>
+    </dependency>
+
+    <!-- The spring-orm module provides the Spring integration with Hibernate   -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-orm</artifactId>
+      <version>5.1.6.RELEASE</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.glassfish.web</groupId>
+      <artifactId>jakarta.servlet.jsp.jstl</artifactId>
+      <version>1.2.6</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>2.12.1</version>
+    </dependency>
+
+    <!--   Tomcat JDBC Connection Pooling fits better for production purposes than the DriverManagerDataSource provided by Spring  -->
+    <dependency>
+      <groupId>org.apache.tomcat</groupId>
+      <artifactId>tomcat-dbcp</artifactId>
+      <version>9.0.1</version>
+    </dependency>
+
 
   </dependencies>
 

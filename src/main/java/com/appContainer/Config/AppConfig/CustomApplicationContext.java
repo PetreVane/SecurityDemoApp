@@ -1,4 +1,4 @@
-package AppContainer.Config.AppConfig;
+package com.appContainer.Config.AppConfig;
 
 
 import org.hibernate.SessionFactory;
@@ -60,7 +60,7 @@ public class CustomApplicationContext implements WebMvcConfigurer {
     public SessionFactory getSessionFactory() throws IOException {
 
         LocalSessionFactoryBean sessionFactoryBean = new LocalSessionFactoryBean();
-        sessionFactoryBean.setPackagesToScan("AppContainer");
+        sessionFactoryBean.setPackagesToScan("com/appContainer");
 
         //getHibernateProperties method is a private method
         sessionFactoryBean.setHibernateProperties(getHibernateProperties());

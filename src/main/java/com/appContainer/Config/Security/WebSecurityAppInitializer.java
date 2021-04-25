@@ -1,4 +1,4 @@
-package AppContainer.Config.Security;
+package com.appContainer.Config.Security;
 
 import org.springframework.security.web.context.AbstractSecurityWebApplicationInitializer;
 

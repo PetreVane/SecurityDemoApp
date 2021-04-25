@@ -1,6 +1,6 @@
-package AppContainer.DAO;
+package com.appContainer.DAO;
 
-import AppContainer.Models.Customer;
+import com.appContainer.Models.Customer;
 
 import java.util.List;
 

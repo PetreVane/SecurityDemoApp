@@ -1,6 +1,6 @@
-package AppContainer.Services;
+package com.appContainer.Services;
 
-import AppContainer.Models.Customer;
+import com.appContainer.Models.Customer;
 
 import java.util.List;
 

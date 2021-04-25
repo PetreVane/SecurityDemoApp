@@ -1,7 +1,7 @@
-package AppContainer.Services;
+package com.appContainer.Services;
 
-import AppContainer.DAO.CustomerDAO;
-import AppContainer.Models.Customer;
+import com.appContainer.DAO.CustomerDAO;
+import com.appContainer.Models.Customer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

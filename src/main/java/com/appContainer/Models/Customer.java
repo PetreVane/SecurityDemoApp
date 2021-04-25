@@ -1,4 +1,4 @@
-package AppContainer.Models;
+package com.appContainer.Models;
 
 
 import javax.persistence.*;

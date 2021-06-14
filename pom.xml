@@ -127,8 +127,6 @@
       <version>1.2.6</version>
     </dependency>
 
-
-    <!--   Tomcat JDBC Connection Pooling fits better for production purposes than the DriverManagerDataSource provided by Spring  -->
     <dependency>
       <groupId>org.apache.tomcat</groupId>
       <artifactId>tomcat-dbcp</artifactId>

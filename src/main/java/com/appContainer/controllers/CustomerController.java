@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.util.List;
 
 @Controller
-public class FrontController {
+public class CustomerController {
 
     @Autowired
     private CustomerService customerService;

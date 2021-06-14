@@ -12,13 +12,13 @@ It makes also use of Spring Security and will expose few enpoints for mobile cli
 
 Progress:
 
-![50%](https://progress-bar.dev/85)
+![50%](https://progress-bar.dev/100)
 
 
 - [x] Hibernate
 - [x] Frontend
 - [x] Security
-- [ ] Rest endpoints
+- [x] Rest endpoints
 
 
 
@@ -28,3 +28,5 @@ Progress:
 ![Alt text](screenShots/screenshot2.png?raw=True "screenshot") 
 
 ![Alt text](screenShots/screenshot3.png?raw=True "screenshot")
+
+![Alt text](screenShots/screenshot4.png?raw=True "screenshot")

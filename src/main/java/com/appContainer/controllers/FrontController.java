@@ -1,8 +1,8 @@
-package com.appContainer.Controllers;
+package com.appContainer.controllers;
 
 
-import com.appContainer.Models.Customer;
-import com.appContainer.Services.CustomerService;
+import com.appContainer.entities.Customer;
+import com.appContainer.services.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

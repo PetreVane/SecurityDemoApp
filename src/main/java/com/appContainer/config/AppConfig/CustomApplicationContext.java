@@ -1,7 +1,6 @@
-package com.appContainer.Config.AppConfig;
+package com.appContainer.config.AppConfig;
 
 
-import com.mchange.v2.c3p0.ComboPooledDataSource;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -19,7 +18,6 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.core.env.Environment;
 
 import javax.sql.DataSource;
-import java.beans.PropertyVetoException;
 import java.io.IOException;
 import java.util.Objects;
 import java.util.Properties;

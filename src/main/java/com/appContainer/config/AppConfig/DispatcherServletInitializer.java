@@ -1,4 +1,4 @@
-package com.appContainer.Config.AppConfig;
+package com.appContainer.config.AppConfig;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 

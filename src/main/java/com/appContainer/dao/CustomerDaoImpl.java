@@ -1,6 +1,6 @@
-package com.appContainer.DAO;
+package com.appContainer.dao;
 
-import com.appContainer.Models.Customer;
+import com.appContainer.entities.Customer;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;

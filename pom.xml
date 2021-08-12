@@ -26,6 +26,7 @@
     <sonar.organization>petrevane</sonar.organization>
     <sonar.host.url>https://sonarcloud.io</sonar.host.url>
 
+
   </properties>
 
   <dependencies>
@@ -127,13 +128,6 @@
       <version>1.2.6</version>
     </dependency>
 
-    <dependency>
-      <groupId>com.fasterxml.jackson.core</groupId>
-      <artifactId>jackson-databind</artifactId>
-      <version>2.12.1</version>
-    </dependency>
-
-    <!--   Tomcat JDBC Connection Pooling fits better for production purposes than the DriverManagerDataSource provided by Spring  -->
     <dependency>
       <groupId>org.apache.tomcat</groupId>
       <artifactId>tomcat-dbcp</artifactId>
